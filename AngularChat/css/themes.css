@@ -1,0 +1,199 @@
+﻿/* -----irontec ---*/
+.chat-th-irontec .chat-top-bar {
+  background: #333;
+  color: #fff;
+}
+
+.chat-th-irontec .panel-square {
+    background-color: #c33;
+}
+
+.chat-th-irontec .window-actions .fa{
+    color: #c33;
+    font-size: 18px;
+}
+.chat-th-irontec .chat-msg-sent {
+    background-color: #eef1f5;
+}
+
+.chat-th-irontec .chat-msg-sent::after {
+    border-left: 10px solid #eef1f5;
+}
+
+.chat-th-irontec .chat-msg-recieved {
+    background-color: #c33;
+    color: #fff;
+}
+
+.chat-th-irontec .chat-msg-recieved::after {
+    border-right: 10px solid #c33;
+}
+
+.chat-th-irontec .chat-input:focus {
+  border-color: #c33;
+  box-shadow: 0 1px 1px #fff inset, 0 0 8px #c33;
+  outline: 0 none;
+}
+
+.chat-th-irontec .chat-submit-button {
+  background: #c33;
+  color: #fff;
+}
+
+.chat-th-irontec .chat-submit-button:focus {
+  border-color: #c33;
+  outline: 0 none;
+}
+
+
+/* --  material --- */
+.chat-th-material .chat-top-bar {
+  background: #333;
+  color: #fff;
+}
+
+.chat-th-material .panel-square {
+    background-color: #009688;
+}
+
+.chat-th-material .window-actions .fa{
+    color: #009688;
+    font-size: 18px;
+}
+.chat-th-material .chat-msg-sent {
+    background-color: #eef1f5;
+}
+
+.chat-th-material .chat-msg-sent::after {
+    border-left: 10px solid #eef1f5;
+}
+
+.chat-th-material .chat-msg-recieved {
+    background-color: #009688;
+    color: #fff;
+}
+
+.chat-th-material .chat-msg-recieved::after {
+    border-right: 10px solid #009688;
+}
+
+.chat-th-material .chat-input:focus {
+  border-color: #009688;
+  box-shadow: 0 1px 1px #fff inset, 0 0 8px #009688;
+  outline: 0 none;
+}
+
+.chat-th-material .chat-submit-button {
+  background: #009688;
+  color: #fff;
+}
+
+.chat-th-material .chat-submit-button:focus {
+  border-color: #009688;
+  outline: 0 none;
+}
+
+
+/*----darkness ---*/
+.chat-th-darkness .chat-top-bar {
+  background: #333;
+  color: #fff;
+}
+
+.chat-th-darkness .panel-square {
+    background-color: #44bb6e;
+}
+
+.chat-th-darkness .window-actions .fa{
+    color: #44bb6e;
+    font-size: 18px;
+}
+
+.chat-th-darkness .chat-msg-sent {
+    background-color: #eef1f5;
+}
+
+.chat-th-darkness .chat-msg-sent::after {
+    border-left: 10px solid #eef1f5;
+}
+
+.chat-th-darkness .chat-msg-recieved {
+    background-color: #44bb6e;
+    color: #fff;
+}
+
+.chat-th-darkness .chat-msg-recieved::after {
+    border-right: 10px solid #44bb6e;
+}
+
+.chat-th-darkness .chat-input:focus {
+  border-color: #299f53;
+  box-shadow: 0 1px 1px #fff inset, 0 0 8px #299f53;
+  outline: 0 none;
+}
+
+.chat-th-darkness .chat-submit-button {
+  background: #299f53;
+  color: #fff;
+}
+
+.chat-th-darkness .chat-submit-button:focus {
+  border-color: #299f53;
+  outline: 0 none;
+}
+
+/*-------- skyblue ----------*/
+.chat-th-skyblue .chat-top-bar {
+  background: rgba(36,127,255,1);
+  background: -moz-linear-gradient(left, rgba(36,127,255,1) 20%, rgba(67,111,255,1) 50%, rgba(90,98,255,1) 73%, rgba(112,87,255,1) 94%);
+  background: -webkit-gradient(left top, right top, color-stop(20%, rgba(36,127,255,1)), color-stop(50%, rgba(67,111,255,1)), color-stop(73%, rgba(90,98,255,1)), color-stop(94%, rgba(112,87,255,1)));
+  background: -webkit-linear-gradient(left, rgba(36,127,255,1) 20%, rgba(67,111,255,1) 50%, rgba(90,98,255,1) 73%, rgba(112,87,255,1) 94%);
+  background: -o-linear-gradient(left, rgba(36,127,255,1) 20%, rgba(67,111,255,1) 50%, rgba(90,98,255,1) 73%, rgba(112,87,255,1) 94%);
+  background: -ms-linear-gradient(left, rgba(36,127,255,1) 20%, rgba(67,111,255,1) 50%, rgba(90,98,255,1) 73%, rgba(112,87,255,1) 94%);
+  background: linear-gradient(to right, rgba(36,127,255,1) 20%, rgba(67,111,255,1) 50%, rgba(90,98,255,1) 73%, rgba(112,87,255,1) 94%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#247fff', endColorstr='#7057ff', GradientType=1 );
+  color: #fff;
+}
+
+.chat-th-skyblue .panel-square {
+    background-color: #73b7de;
+}
+
+.chat-th-skyblue .window-actions .fa{
+    color: #fff;
+    font-size: 18px;
+}
+
+.chat-th-skyblue .chat-msg-sent {
+    background-color: #eef1f5;
+}
+
+.chat-th-skyblue .chat-msg-sent::after {
+    border-left: 10px solid #eef1f5;
+}
+
+.chat-th-skyblue .chat-msg-recieved {
+    background-color: #73b7de;
+    color: #fff;
+}
+
+.chat-th-skyblue .chat-msg-recieved::after {
+    border-right: 10px solid #73b7de;
+}
+
+
+.chat-th-skyblue .chat-input:focus {
+  border-color: #73b7de;
+  box-shadow: 0 1px 1px #fff inset, 0 0 8px #73b7de;
+  outline: 0 none;
+}
+
+.chat-th-skyblue .chat-submit-button {
+  background: #73b7de;
+  color: #fff;
+}
+
+.chat-th-skyblue .chat-submit-button:focus {
+  border-color: #73b7de;
+  outline: 0 none;
+}

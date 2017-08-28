@@ -1,0 +1,57 @@
+﻿<div ng-show="visible" class="row chat-window col-xs-5 col-md-3 {{vm.theme}}" ng-class="{minimized: vm.isHidden}" ng-style="vm.height">
+    <div class="col-xs-12 col-md-12">
+        <div class="panel-chat">
+            <div class="panel-heading chat-top-bar">
+                <div class="col-md-10 col-xs-10">
+                    <h3 class="panel-title">{{vm.title}}</h3>
+                    <div class="advisor">
+                        <img ng-if="vm.advisors.imageUrl" class="profile" src="{{vm.advisors.imageUrl}}" />
+                        <span class="advisor-text" ng-bind="vm.advisors.name"></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-2 window-actions" style="text-align: left;">
+                    <span class="fa" ng-class="vm.chatButtonClass" ng-click="vm.toggle()"></span>
+                    <span class="fa fa-close" ng-style="vm.closeChatStyle" ng-click="vm.close()"></span>
+                </div>
+            </div>
+            <div class="panel-body" ng-style="vm.panelStyle">
+                <div ng-class="vm.objectPanel" ng-click="vm.toggleObjectPanel()">
+                    <span class="fa" ng-class="vm.objectPanelButtonClass"></span>
+                </div>
+                <div class="msg-container-base">
+                    <div class="obj-container animate-if" ng-if="vm.togglePanels" ng-class="vm.noObjectClass">
+                        <div ng-style="vm.objContainerStyle">
+                            <code class="cs js format-code" ng-bind="vm.object"></code>
+                        </div>
+                    </div>
+                    <div class="msg-container animate-if" ng-if="!vm.togglePanels" ng-repeat="message in vm.messages" ng-init="advisor = message.role == 'advisor'">
+                        <div class="chat-msg-wrap" ng-if="advisor">
+                            <div class="chat-msg chat-msg-recieved">
+                                <span class="hide" ng-bind="vm.myUserId"></span>
+                                <div class="text">{{message.content}}</div>
+                            </div>
+                            <div class="chat-msg-time">
+                                <span class="date" ng-bind="message.date|date:'H:mm'"></span>
+                            </div>
+                        </div>
+                        <div class="chat-msg-wrap" ng-if="!advisor">
+                            <div class="chat-msg-time">
+                                <span class="date" ng-bind="message.date|date:'H:mm'"></span>
+                            </div>
+                            <div class="chat-msg chat-msg-sent">
+                                <span class="hide" ng-bind="vm.myUserId"></span>
+                                <div class="text">{{message.content}}</div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="typing">Robot is typing ...</div>
+            </div>
+            <div class="chat-bottom-bar">
+                <div class="input-group">
+                    <textarea type="text" class="form-control chat-input" maxlength="1000" ng-keydown="vm.ctrlEnter($event)" ng-model="vm.message"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
